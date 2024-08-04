@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiNode = axios.create({
-  baseURL: 'http://localhost:3001',
+  baseURL: 'https://node-api-pt.onrender.com',
 });
 
 
