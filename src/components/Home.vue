@@ -23,7 +23,7 @@
         </form>
       </div>
       <div class="col">
-        <h2>Ejemplo de formato de envio</h2>
+        <h2>Formato de Envío de Datos de Matriz</h2>
         <p>[ </p>
         <p>[10, 102, 0],</p>
         <p> [0, 20, 0],</p>
