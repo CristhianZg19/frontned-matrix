@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import apiNode from "../apiNode";
 
 export default {
   name: "LoginPage",
@@ -56,7 +56,7 @@ export default {
   methods: {
     async login() {
       try {
-        const response = await axios.post("http://localhost:3001/login", {
+        const response = await apiNode.post("/login", {
           username: this.username,
           password: this.password,
         });
