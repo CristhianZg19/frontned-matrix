@@ -5,19 +5,33 @@
         Cerrar Sesión
       </button>
     </div>
-    <h1>Matrix Rotation</h1>
-    <form @submit.prevent="rotateMatrix">
-      <textarea
-        v-model="matrixInput"
-        placeholder="Enter matrix as JSON"
-        style="width: 25%; min-height: 150px"
-        required
-        class="form-control d-inline"
-      ></textarea>
-      <br />
-      <button type="submit" class="btn btn-outline-success">QR Matrix</button>
-    </form>
-
+    <div class="row">
+      <div class="col">
+        <h1>Matrix Rotation</h1>
+        <form @submit.prevent="rotateMatrix">
+          <textarea
+            v-model="matrixInput"
+            placeholder="Enter matrix as JSON"
+            style="width: 25%; min-height: 150px"
+            required
+            class="form-control d-inline"
+          ></textarea>
+          <br />
+          <button type="submit" class="btn btn-outline-success">
+            QR Matrix
+          </button>
+        </form>
+      </div>
+      <div class="col">
+        <h2>Ejemplo de formato de envio</h2>
+        <p>[ </p>
+        <p>[10, 102, 0],</p>
+        <p> [0, 20, 0],</p>
+        <p>[20, 0, 30] </p>
+        <p>]</p>
+      </div>
+    </div>
+<hr>
     <div class="row">
       <div class="col-md-6">
         <div v-if="rotatedMatrix">
